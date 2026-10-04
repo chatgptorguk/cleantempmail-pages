@@ -22,11 +22,27 @@
   }
   reveal();
   reduce.addEventListener('change', reveal);
+  const tocLinks = [...document.querySelectorAll('.article-toc a[href^="#"]')];
+  const tocSections = tocLinks.map(link => document.getElementById(link.hash.slice(1)));
+  let currentSection = -1;
   let queued = false;
   const updateProgress = () => {
     const max = document.documentElement.scrollHeight - innerHeight;
     document.querySelector('.reading-progress')?.style.setProperty('--progress', max > 0 ? String(scrollY / max) : '0');
     document.body.classList.toggle('is-scrolled', scrollY > 350);
+    if (tocLinks.length) {
+      let active = 0;
+      tocSections.forEach((section, index) => {
+        if (section && section.getBoundingClientRect().top <= 160) active = index;
+      });
+      if (active !== currentSection) {
+        tocLinks.forEach((link, index) => {
+          if (index === active) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        });
+        currentSection = active;
+      }
+    }
     queued = false;
   };
   addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(updateProgress); } }, { passive: true });

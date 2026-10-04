@@ -37,7 +37,7 @@ python3 -m http.server 8080 --directory site
 - English copy and metadata：`site/en/index.html`
 - 语言偏好：`site/assets/language.js`
 - 基础布局：`site/assets/style.css`
-- 深色视觉、悬浮导航、功能卡片布局与移动端：`site/assets/polish.css`
+- 浅色品牌视觉、悬浮导航、卡片布局与移动端：`site/assets/style.css`；`polish.css` 为兼容空文件
 - 滚动入场、卡片光效、移动导航、额度估算：`site/assets/effects.js`
 - 双语指南：`site/guide/temporary-email.html`、`site/en/guide/temporary-email.html`
 - 分享预览：`site/assets/social.png`
@@ -54,7 +54,7 @@ python3 -m http.server 8080 --directory site
 
 ## 视觉与 SEO
 
-提供悬浮圆角导航、薄荷绿与淡紫色层次、收件箱示意、大小组合的功能卡片、SVG 图标、多端入口图形、API 测试流程图，以及动态光晕、滚动入场、指针卡片光效、阅读进度与回到顶部。中英文首页共用样式，指南页同步使用品牌与导航样式。尊重 `prefers-reduced-motion`；JavaScript 关闭时正文可见。动画使用 CSS transform 和 opacity，滚动监听使用 requestAnimationFrame，移动端不启用指针光效，无动画框架或外部字体依赖。
+提供米白与墨绿配色、悬浮圆角导航、点阵背景收件箱示意、大小组合的功能卡片、SVG 指南图标、多端入口图形和深绿 API 展示区。文章使用桌面侧栏目录与独立阅读列，移动端恢复单列布局；包含滚动入场、指针卡片光效、阅读进度与回到顶部。中英文首页共用样式，指南页同步使用品牌与导航样式。尊重 `prefers-reduced-motion`；JavaScript 关闭时正文可见。动画使用 CSS transform 和 opacity，滚动监听使用 requestAnimationFrame，移动端不启用指针光效，无动画框架或外部字体依赖。
 
 14 个静态页面各自配置标题、描述、canonical、双向 hreflang、Open Graph 分享图和 JSON-LD。首页使用 WebSite / WebPage，专题指南使用 Article 与 BreadcrumbList，指南中心使用 CollectionPage 与 ItemList。站点地图包含所有 14 个 URL 和双向语言关联。没有虚构评分或用户评价，也没有承诺搜索排名或富媒体结果。
 
