@@ -8,6 +8,8 @@
     if (explicit) localStorage.setItem('ctm-promo-language', explicit);
     else preferred = localStorage.getItem('ctm-promo-language');
   } catch (_) { /* Explicit language links work without local storage. */ }
+  // Keep directly linked guide languages stable for readers and crawlers.
+  if (script?.dataset.languageMode === 'explicit' && !explicit) return;
   if ((preferred === 'en' || preferred === 'zh') && preferred !== current) {
     const path = script?.dataset[preferred];
     if (!path) return;

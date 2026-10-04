@@ -1,2 +1,101 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://cleantempmailcom.github.io/cleantempmail-pages/</loc><lastmod>2026-10-04</lastmod></url><url><loc>https://cleantempmailcom.github.io/cleantempmail-pages/en/</loc><lastmod>2026-10-04</lastmod></url><url><loc>https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-email.html</loc><lastmod>2026-10-04</lastmod></url><url><loc>https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/temporary-email.html</loc><lastmod>2026-10-04</lastmod></url></urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/en/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-email.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-email.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/temporary-email.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-email.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/temporary-email.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-email.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/temporary-email.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-email.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/guide/index.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/index.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/index.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/index.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/guide/email-not-received.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/email-not-received.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/email-not-received.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/email-not-received.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/email-not-received.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/email-not-received.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/email-not-received.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/email-not-received.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/guide/custom-domain-email.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/custom-domain-email.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/custom-domain-email.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/custom-domain-email.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/custom-domain-email.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/custom-domain-email.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/custom-domain-email.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/custom-domain-email.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-vs-permanent-email.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-vs-permanent-email.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/temporary-vs-permanent-email.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-vs-permanent-email.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/temporary-vs-permanent-email.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-vs-permanent-email.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/temporary-vs-permanent-email.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/temporary-vs-permanent-email.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/guide/email-testing-api.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/email-testing-api.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/email-testing-api.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/email-testing-api.html" />
+  </url>
+  <url>
+    <loc>https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/email-testing-api.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/email-testing-api.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cleantempmailcom.github.io/cleantempmail-pages/en/guide/email-testing-api.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cleantempmailcom.github.io/cleantempmail-pages/guide/email-testing-api.html" />
+  </url>
+</urlset>

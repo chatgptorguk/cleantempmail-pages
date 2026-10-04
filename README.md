@@ -56,8 +56,25 @@ python3 -m http.server 8080 --directory site
 
 提供悬浮圆角导航、薄荷绿与淡紫色层次、收件箱示意、大小组合的功能卡片、SVG 图标、多端入口图形、API 测试流程图，以及动态光晕、滚动入场、指针卡片光效、阅读进度与回到顶部。中英文首页共用样式，指南页同步使用品牌与导航样式。尊重 `prefers-reduced-motion`；JavaScript 关闭时正文可见。动画使用 CSS transform 和 opacity，滚动监听使用 requestAnimationFrame，移动端不启用指针光效，无动画框架或外部字体依赖。
 
-四个静态页面各自配置标题、描述、canonical、双向 hreflang、Open Graph 分享图和 JSON-LD。主站使用 WebSite / WebPage，指南使用 Article。没有虚构评分或用户评价，也没有承诺搜索排名或富媒体结果。
+14 个静态页面各自配置标题、描述、canonical、双向 hreflang、Open Graph 分享图和 JSON-LD。首页使用 WebSite / WebPage，专题指南使用 Article 与 BreadcrumbList，指南中心使用 CollectionPage 与 ItemList。站点地图包含所有 14 个 URL 和双向语言关联。没有虚构评分或用户评价，也没有承诺搜索排名或富媒体结果。
 
-站点地图：https://cleantempmailcom.github.io/cleantempmail-pages/sitemap.xml 。可在你已验证的 Google Search Console 资源中提交；本次未进行 Search Console 所有权验证或提交。GitHub Pages 项目路径下的 robots.txt 不能控制域名根目录的抓取，因此本项目未添加无效的子目录 robots 文件。
+站点地图：https://cleantempmailcom.github.io/cleantempmail-pages/sitemap.xml 。可在你已验证的 Google Search Console 资源中提交；本次未进行 Search Console 所有权验证或提交。GitHub Pages 项目路径下的 robots.txt 不能控制域名根目录的抓取。本次在根地址仓库 cleantempmailcom.github.io 发布 robots.txt，并声明本推广站的站点地图；项目子目录不添加 robots 文件。
 
 额度估算器只进行本地计算，不收集 API 密钥。估算公式为：流程数 ×（向上取整的等待秒数 / 轮询间隔 + 3）；三次基础操作分别为创建地址、读取一封邮件和删除一封邮件。实际重试和额外操作会增加消耗。
+
+
+## 专题内容与指南中心
+
+指南中心：`site/guide/index.html` 和 `site/en/guide/index.html`。共 5 篇实用指南，每篇均有中英两个独立 URL：
+
+| 页面 | 主题 |
+| --- | --- |
+| temporary-email.html | 临时邮箱基础与使用边界 |
+| email-not-received.html | 收不到邮件的分阶段排查与反馈清单 |
+| custom-domain-email.html | 自有域名规划、MX 检查与投递验收 |
+| temporary-vs-permanent-email.html | 按通信生命周期选择邮箱 |
+| email-testing-api.html | 自动化测试设计、断言、轮询与请求预算 |
+
+专题页面使用 `site/assets/guides.css`。首页、指南中心和文章互相链接，文章列出对应的官方参考资料。直接打开指南 URL 时保持该 URL 的语言，不根据已保存偏好自动切换；点击语言按钮或显式 `?lang=` 仍可以切换。
+
+页面位于 GitHub Pages 推广站，提供有用内容与主站入口；它们不会自动出现在 cleantempmail.com 主域名下。本次未提交 Search Console，也没有获得真实抓取、收录或排名提升数据。新增内容依据官方帮助与 API 文档核对，不包含伪造的测评结果或虚构送达时限。
