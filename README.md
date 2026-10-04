@@ -40,3 +40,9 @@ python3 -m http.server 8080 --directory site
 - 网站图标：`site/assets/favicon.svg`
 
 域名供应情况与服务规则以官网为准。页面没有编造用户数、评价、可用性保证或邮件保留时长。两种语言均已配置 canonical 和 hreflang。
+
+## 功能与 API 介绍
+
+中英文页面介绍免费网页邮箱、自定义前缀、多域名、自有域名接入、邮件管理、追踪保护、隐私工具、iOS App、Chrome 扩展和付费 REST API。API 区域包含四档一次性请求套餐、额度规则和官网购买入口。
+
+价格与规则核对于 2026-10-04，来源为 https://cleantempmail.com/api 。首页与帮助来源：https://cleantempmail.com/ 、https://cleantempmail.com/help 。套餐价格若有变化，应同步更新两个语言页面中的价格和核对日期。宣传页不处理付款或 API 密钥。
