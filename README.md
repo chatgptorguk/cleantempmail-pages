@@ -4,8 +4,8 @@
 
 ## 语言切换
 
-- 中文：https://chatgptorguk.github.io/cleantempmail-pages/?lang=zh
-- English：https://chatgptorguk.github.io/cleantempmail-pages/en/?lang=en
+- 中文：https://cleantempmailcom.github.io/cleantempmail-pages/?lang=zh
+- English：https://cleantempmailcom.github.io/cleantempmail-pages/en/?lang=en
 - 页头的 `中文 / EN` 可以切换语言。浏览器允许本地存储时，会记住访客选择；`?lang=zh` 或 `?lang=en` 优先于已保存偏好。
 - 两种语言都是完整静态页面，JavaScript 被禁用时仍可阅读及切换。两页有各自标题、描述、canonical 和 hreflang。
 
