@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - 'site/**'
+      - 'scripts/check_seo.py'
+      - 'scripts/check_language.cjs'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -22,6 +24,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Validate SEO and language links
+        run: |
+          python3 scripts/check_seo.py
+          node scripts/check_language.cjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload website

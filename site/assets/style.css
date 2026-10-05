@@ -341,6 +341,7 @@ h2{font-size:clamp(28px,3.2vw,38px);line-height:1.32;letter-spacing:-.02em;font-
 .faq-list summary span{color:var(--accent);font-size:20px;line-height:1;transition:transform .2s;flex-shrink:0}
 .faq-list details[open] summary span{transform:rotate(45deg)}
 .faq-list details p{color:var(--muted);font-size:14px;margin:14px 0 0;line-height:1.9}
+.faq-list details p a{color:var(--accent-deep);text-decoration:underline;text-underline-offset:4px;text-decoration-color:#b9d8ca}
 
 /* ---------- CTA ---------- */
 .cta{position:relative;overflow:hidden;border:1px solid #c8ddc4;border-radius:28px;text-align:center;

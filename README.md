@@ -1,12 +1,13 @@
 # CleanTempMail 宣传网站
 
-中英双语响应式产品介绍页，主要按钮指向 https://cleantempmail.com/ 。静态 HTML / CSS，加上轻量语言偏好、滚动动画和额度估算脚本，无构建步骤、外部字体、追踪脚本或运行时依赖。邮箱卡片为视觉示意，不能收取邮件。
+中英双语响应式产品介绍页，主要按钮指向 https://cleantempmail.com/ 。静态 HTML / CSS，加上轻量语言切换、滚动动画和额度估算脚本，无构建步骤、外部字体、追踪脚本或运行时依赖。邮箱卡片为视觉示意，不能收取邮件。
 
 ## 语言切换
 
-- 中文：https://cleantempmailcom.github.io/cleantempmail-pages/?lang=zh
-- English：https://cleantempmailcom.github.io/cleantempmail-pages/en/?lang=en
-- 页头的 `中文 / EN` 可以切换语言。浏览器允许本地存储时，会记住访客选择；`?lang=zh` 或 `?lang=en` 优先于已保存偏好。
+- 中文：https://cleantempmailcom.github.io/cleantempmail-pages/
+- English：https://cleantempmailcom.github.io/cleantempmail-pages/en/
+- 页头的 `中文 / EN` 使用无语言参数的独立地址。所有页面由 URL 决定语言，不再根据已保存的偏好自动跳转，确保读者和搜索引擎能直接访问两个版本。
+- 兼容旧的 `?lang=zh` 和 `?lang=en` 链接：显式指定另一语言时前往对应页面；已经匹配时清理语言参数。启用 JavaScript 时保留其他查询参数和锚点，切换语言也会保留它们。
 - 两种语言都是完整静态页面，JavaScript 被禁用时仍可阅读及切换。两页有各自标题、描述、canonical 和 hreflang。
 
 ## 本地预览
@@ -35,7 +36,7 @@ python3 -m http.server 8080 --directory site
 
 - 中文宣传文案、官网链接、SEO 描述：`site/index.html`
 - English copy and metadata：`site/en/index.html`
-- 语言偏好：`site/assets/language.js`
+- 语言链接与旧参数兼容：`site/assets/language.js`
 - 基础布局：`site/assets/style.css`
 - 浅色品牌视觉、悬浮导航、卡片布局与移动端：`site/assets/style.css`；`polish.css` 为兼容空文件
 - 滚动入场、卡片光效、移动导航、额度估算：`site/assets/effects.js`
@@ -75,6 +76,25 @@ python3 -m http.server 8080 --directory site
 | temporary-vs-permanent-email.html | 按通信生命周期选择邮箱 |
 | email-testing-api.html | 自动化测试设计、断言、轮询与请求预算 |
 
-专题页面使用 `site/assets/guides.css`。首页、指南中心和文章互相链接，文章列出对应的官方参考资料。直接打开指南 URL 时保持该 URL 的语言，不根据已保存偏好自动切换；点击语言按钮或显式 `?lang=` 仍可以切换。
+专题页面使用 `site/assets/guides.css`。首页、指南中心和文章互相链接，文章列出对应的官方参考资料。直接打开任一页面时保持该 URL 的语言，不根据已保存偏好自动切换；点击语言按钮或显式 `?lang=` 仍可以切换。
 
 页面位于 GitHub Pages 推广站，提供有用内容与主站入口；它们不会自动出现在 cleantempmail.com 主域名下。本次未提交 Search Console，也没有获得真实抓取、收录或排名提升数据。新增内容依据官方帮助与 API 文档核对，不包含伪造的测评结果或虚构送达时限。
+
+## SEO 检查与维护
+
+首页标题、H1 与摘要明确说明免费临时邮箱用途；英文文章标题保持简洁。所有页面的 Open Graph / Twitter 标题、摘要和图片替代文字与对应语言一致。10 篇文章均有与可见导航对应的面包屑数据，并通过 WebPage、Article 和 WebSite 的标识关联。
+
+首页常见问题补充临时邮箱用途、收不到验证码或邮件的排查入口，已有域名、API 额度及长期使用问题链接到对应专题。指南正文在相关步骤中互相链接，方便读者继续排查或实施。页面不再加载已退役、没有样式规则的 `polish.css`，文件保留以兼容旧页面。
+
+指南中心的规范地址统一为 `/guide/` 与 `/en/guide/`。旧 `index.html` 地址仍能访问，但 canonical、站内链接、双语标记、JSON-LD 和 sitemap 均指向目录地址。文章保留原有 `.html` 地址。`lastmod` 仅在页面实际修改时更新，不在每次部署时自动刷新。
+
+发布前运行（Python 3.9+、Node.js 20+，无需安装依赖）：
+
+```sh
+python3 scripts/check_seo.py
+node scripts/check_language.cjs
+```
+
+GitHub Actions 会先执行两项检查，通过后再部署。检查覆盖页面元信息、唯一标题与描述、站内资源与锚点、canonical、双向 hreflang、sitemap、JSON-LD，以及语言切换中的旧参数兼容和链接保留。它们不代替 Google Rich Results Test 或 Search Console 的实际抓取与索引报告。
+
+实施参考：[Google 多语言网站指南](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites)、[规范网址](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)、[标题链接](https://developers.google.com/search/docs/appearance/title-link)、[Article 结构化数据](https://developers.google.com/search/docs/appearance/structured-data/article)。
